@@ -8,22 +8,19 @@
         body {
             text-align: center;
             background-color: #fff3e6;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
-        .video-container {
+        .container {
             width: 90%;
             max-width: 600px;
             margin: 20px auto;
-            position: relative;
         }
-        .image-container {
-            width: 90%;
-            max-width: 600px;
-            margin: 20px auto;
-            position: relative;
-        }
-        video {
+        video, img {
             width: 100%;
             height: auto;
+            display: block;
         }
     </style>
     <script>
@@ -38,13 +35,13 @@
 
 </head>
 <body>
-    <div class="video-container">
-        <video controls poster="https://g7wang.oss-cn-beijing.aliyuncs.com/WechatIMG10149.jpg" >
+    <div class="container">
+        <video controls poster="https://g7wang.oss-cn-beijing.aliyuncs.com/WechatIMG10149.jpg">
             <source src="https://g7wang.oss-cn-beijing.aliyuncs.com/10179_1741179260.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-    <div class="image-container">
+    <div class="container">
         <img src="https://g7wang.oss-cn-beijing.aliyuncs.com/WechatIMG10149.jpg" alt="Poster">
     </div>    
 
